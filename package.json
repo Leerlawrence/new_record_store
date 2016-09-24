@@ -1,0 +1,14 @@
+{
+  "name": "new_record_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "collector.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.16.1"
+  }
+}
