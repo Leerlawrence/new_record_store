@@ -9,9 +9,9 @@ var record_1 = new Record("Josef Lawrence", "Wait", 2.50);
 var record_2 = new Record("Beatles", "The White Album", 13.00);
 var record_3 = new Record("Miley Cyrus", "Some old rubbish", 1.00);
 
-describe ( 'Collector', function() {
 
-  beforeEach( function() {
+describe ( 'Collector', function() {
+  beforeEach( function() { 
     collector1.records = [];
     collector1.balance = 20;
     store.records = [];
