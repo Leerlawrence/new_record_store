@@ -5,12 +5,12 @@ var Collector = require('../collector.js');
 
 var store = new Store("HMV", "Perth");
 var collector1 = new Collector("Richard Branson");
-var record_1 = new Record("Josef Lawrence", "Wait", 2.50);
+var record_1 = new Record("Josef Lawrence", "Grow Up", 12.50);
 var record_2 = new Record("Beatles", "The White Album", 13.00);
 var record_3 = new Record("Miley Cyrus", "Some old rubbish", 1.00);
 
-
-describe ( 'Collector', function() {
+// console.log("------------------------------------------");
+describe ( '             COLLECTOR', function() {
   beforeEach( function() { 
     collector1.records = [];
     collector1.balance = 20;
@@ -21,7 +21,7 @@ describe ( 'Collector', function() {
   it ( 'should be able to  add record', function() {
     collector1.add(record_3);
     assert(1, collector1.records.length)
-    console.log("------------------------------------------");
+    console.log("------------------------------------------------");
     console.log(collector1.name + " added " + record_2.title)
   })
 
@@ -61,7 +61,7 @@ describe ( 'Collector', function() {
     assert(1, collector1.records.length);
     assert(17.50, collector1.balance);
     console.log(collector1.name + " can buy records");
-      })
+  })
   
 
 })
