@@ -27,17 +27,12 @@ describe ( 'Store', function() {
     
     console.log("------------------------------------------");
     console.log("");
-    //console.log(store.inventory());
+  
 
     for (i = 0; i < store.inventory().length; i++) { 
         console.log(store.inventory()[i]);
     }
-
- // for i=0 to ((store.inventory().length)-1){
- //    console.log(store.inventory().length);
-  //console.log("------------------------------------------");
-  })
-
+})
 
   it('should have a a balance', function() {
     assert.deepEqual(250, store.balance);
@@ -93,8 +88,7 @@ describe ( 'Store', function() {
       assert.deepEqual("Josef Lawrence    ", sorted[1].artist );
       
       console.log("Stock can be sorted by Artist")
-  })
-
+     })
   
 
 
